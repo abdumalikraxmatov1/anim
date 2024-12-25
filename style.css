@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.box{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    animation-name: abu;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes abu {
+    0%{
+        background-color: aqua;
+        top: 0px;
+        left: 0;
+    }
+    25%{
+        top: 0px;
+        left: 1000px;
+    }
+    50%{
+        top: 600px;
+        background-color: red;
+        left: 1000px;
+    }
+    75%{
+        top: 600px;
+        left: 0px;
+        background-color: yellow;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        background-color: darkblue;
+    }
+}
